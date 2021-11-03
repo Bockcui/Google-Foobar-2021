@@ -67,10 +67,10 @@ def solution(s):
     braille = ''
 
     for i in range(0, len(s)):
-        if s[i].isupper(): #Google requires participants to provide a solution in Python 2.7 so match/case is not available as a method
+        if s[i].isupper():
             braille += '000001'
 
-        if s[i].upper() == ' ':
+        if s[i] == ' ': #Google requires participants to provide a solution in Python 2.7 so match/case is not available as a method
             braille += '000000'
         elif s[i].upper() == 'A':
             braille += '100000'
